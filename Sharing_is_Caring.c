@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main(){
-    int a,b,c,d;
+    int a,b,res;
     scanf("%d %d",&a,&b);
-    c=((b*(b+1))/2.0)-b;
-    d=a-c;
-    if(d>=b){
+    res=(b*(b+1))/2.0;
+    if(a>=res)
+    {
         printf("YES");
     }
     else
