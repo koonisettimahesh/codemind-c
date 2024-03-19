@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int a,b,n,t;
+    int a,n,b,c,r;
     scanf("%d %d",&a,&b);
     if(a==b)
     {
@@ -9,12 +9,20 @@ int main(){
     }
     if(a<b)
     {
-       n=(b-a-1)/10;
-       printf("%d",n+1);
+        n=b-a;
     }
     else
     {
-        n=(a-b-1)/10;
-        printf("%d",n+1);
+        n=a-b;
+    }
+    r=n%10;
+    c=n/10;
+    if(r!=0)
+    {
+        printf("%d",c+1);
+    }
+    else
+    {
+        printf("%d",c);
     }
 }
